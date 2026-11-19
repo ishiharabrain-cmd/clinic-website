@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://ishiharabrain-cmd.github.io/clinic-website/sitemap.xml
