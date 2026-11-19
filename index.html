@@ -25,7 +25,7 @@
     "streetAddress": "葉山町8-1",
     "addressCountry": "JP"
   },
-  "medicalSpecialty": ["Neurologic", "Psychiatric", "Geriatric"],
+  "medicalSpecialty": ["Neurologic", "Psychiatric"],
   "availableService": [
     {"@type": "MedicalProcedure", "name": "認知症の診断と診断後の支援"},
     {"@type": "MedicalProcedure", "name": "訪問診療・在宅での看取り"}
@@ -87,6 +87,8 @@
   dl div:first-child { border-top: none; }
   dt { font-weight: 700; color: var(--sub); }
   dd { margin: 0; }
+  section ul:not(.news-list) { margin: 0 0 0.9rem; padding-left: 1.3em; }
+  section ul:not(.news-list) li { margin-bottom: 0.3rem; }
   .news-list { list-style: none; margin: 0; padding: 0; }
   .news-list li { padding: 0.6rem 0; border-top: 1px solid var(--line); }
   .news-list li:first-child { border-top: none; }
@@ -119,7 +121,9 @@
       <li><a href="#news">お知らせ</a></li>
       <li><a href="#reserve">ご予約</a></li>
       <li><a href="#about">当院について</a></li>
-      <li><a href="#homecare">訪問診療</a></li>
+      <li><a href="#kakaritsuke">かかりつけ医機能</a></li>
+      <li><a href="#homecare">在宅医療</a></li>
+      <li><a href="#online">オンライン診療</a></li>
       <li><a href="#doctor">院長紹介</a></li>
       <li><a href="#access">アクセス</a></li>
     </ul>
@@ -150,9 +154,8 @@
     <h2>ご予約・お問い合わせ</h2>
     <p class="lead">外来はすべて予約制です。</p>
     <a class="tel" href="tel:05036454567">050-3645-4567</a>
-    <p>新しく受診される方のご予約、受診日の変更やキャンセルは、お電話でお願いいたします。</p>
-    <p><strong>電話受付：火・水・木曜日　午前9時〜12時</strong></p>
-    <p>診察中はお電話に出られないことがあります。留守番電話に、お名前とご用件を残してください。</p>
+    <p><strong>新患のご相談：火・水・木曜日　10時〜16時</strong></p>
+    <p>診察中はお電話に出られません。必ず留守番電話に、患者さんのお名前と症状を残してください。あとで医師から折り返しお電話します。</p>
     <h3>初めて受診される方</h3>
     <p>受診のお申し込みは、こちらのフォームからも受け付けています。</p>
     <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdmz9QwO_31q-cjtAJj_XPYg8YM929Tw8uFXZ7jiwegNCY-TA/viewform" target="_blank" rel="noopener">新患申し込みフォーム</a>
@@ -164,16 +167,48 @@
     <p>当院は、もの忘れや認知症、脳と神経の病気を専門とする診療所です。認知症専門医・脳神経内科専門医が診療します。</p>
     <p>認知症の診断だけでなく、診断を受けたあとの暮らしの支え（診断後支援）を大切にしています。ご本人がこれまでどおり、住み慣れた場所で自分らしく暮らし続けられるように、ご家族やケアマネジャー、介護の事業所と一緒に考えます。</p>
     <p>病名ではなく「その人」を中心に考えるケア（パーソン・センタード・ケア）を土台に、診断の前の不安な時期から人生の最期まで、ご本人とご家族に寄り添います。</p>
-    <h3>主な診療内容</h3>
-    <p>もの忘れ・認知症の診断と治療、診断後のご相談と支援、パーキンソン病など脳神経内科の病気、高齢の方の心の不調、睡眠のお悩み、訪問診療と在宅での看取り。</p>
-    <h3>オンライン診療</h3>
-    <p>当院に通院中の方を対象に行っています。</p>
+    <h3>診療科</h3>
+    <p>精神科・神経内科・心療内科</p>
+  </section>
+
+  <section id="kakaritsuke">
+    <h2>かかりつけ医機能について</h2>
+    <p>当院は「かかりつけ医」として、次のことを行っています。</p>
+    <ul>
+      <li>健康のご相談、医療に関するご相談</li>
+      <li>予防接種に関するご相談</li>
+      <li>介護保険の主治医意見書（介護認定に必要な医師の書類）の作成</li>
+      <li>認知症に関するご相談と、認知症の種類を見分ける診断（鑑別診断）</li>
+      <li>必要に応じた、専門の医療機関へのご紹介</li>
+    </ul>
   </section>
 
   <section id="homecare">
-    <h2>訪問診療</h2>
-    <p>通院が難しくなった方のご自宅や施設に、医師が定期的に伺って診療します。住み慣れた場所で過ごしたいというご本人の思いを大切にし、ご希望があればご自宅での看取りまでお支えします。</p>
-    <p>訪問診療のご相談は、担当のケアマネジャーさん、またはお電話でお問い合わせください。</p>
+    <h2>在宅医療（訪問診療・往診）</h2>
+    <p>通院が難しくなった方のご自宅や施設に、医師が伺って診療します。住み慣れた場所で過ごしたいというご本人の思いを大切にし、ご希望があればご自宅での看取りまでお支えします。</p>
+    <ul>
+      <li>定期的に伺う訪問診療と、急な体調の変化のときに伺う往診に対応しています。</li>
+      <li>24時間連絡がとれる体制を整えています。</li>
+      <li>緊急のときは、連携している病院への入院を手配できます。</li>
+    </ul>
+    <p>在宅医療のご相談は、担当のケアマネジャーさん、またはお電話でお問い合わせください。</p>
+  </section>
+
+  <section id="online">
+    <h2>オンライン診療</h2>
+    <ul>
+      <li>オンライン診療は、再診（2回目以降の受診）の方に行っています。</li>
+      <li>LINEやZoomなどのビデオ通話を使います。</li>
+      <li>通信は、プライバシーに配慮した環境で行います。</li>
+    </ul>
+  </section>
+
+  <section id="partners">
+    <h2>連携している医療機関</h2>
+    <h3>病院</h3>
+    <p>東北公済病院、仙台オープン病院、仙台厚生病院など</p>
+    <h3>訪問看護ステーション</h3>
+    <p>エムツー訪問看護ステーションなど</p>
   </section>
 
   <section id="doctor">
