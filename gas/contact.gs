@@ -86,7 +86,7 @@ function underLimit_(key, max, seconds) {
 
 // URLやドメイン名らしきものが含まれているか
 function hasLink_(v) {
-  const s = String(v || '');
+  const s = String(v || '').normalize('NFKC'); // 全角の「ｈｔｔｐ」なども半角にそろえて調べる
   return /(https?:|ftp:|www\.|:\/\/)/i.test(s) ||
     /[a-z0-9-]+\.(com|net|org|jp|io|co|info|biz|xyz|top|link|site|online|ru|cn)\b/i.test(s);
 }
