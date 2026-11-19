@@ -34,3 +34,7 @@ main ブランチに push すると、GitHub Pages で自動的に公開され�
 - 別院との取り違え防止は、人には目立たせず、機械（検索・AI）に確実に伝える方針。アクセス欄の小さな一文「泉区の「仙台脳とこころのクリニック」とは別の医療機関です。」、`<head>` の meta description と JSON-LD の disambiguatingDescription、`llms.txt` の注意行は消さない。人に見えない隠し文字は使わない（検索エンジンの規約違反になるため）。
 - 文章は、高齢の方やご家族が読んでわかる、やさしい言葉で書く。専門用語には短い説明を添える。
 - 変更したら、コミットメッセージに何を変えたかを日本語で短く書いて main に push する。
+
+## 公開URL
+
+現在の公開URLは https://ishiharabrain-cmd.github.io/clinic-website/ 。独自ドメインに切り替えたときは、`index.html` の `<link rel="canonical">`、`sitemap.xml`、`robots.txt` の Sitemap 行を新しいURLに書き換える。
