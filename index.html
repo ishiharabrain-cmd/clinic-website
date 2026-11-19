@@ -98,6 +98,8 @@
     border: 2px solid var(--accent); border-radius: 999px; text-decoration: none; font-weight: 700;
   }
   .small { font-size: 0.85rem; color: var(--sub); margin-top: 0.8rem; }
+  .map { position: relative; width: 100%; padding-top: 75%; margin: 0.4rem 0 0.9rem; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+  .map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   footer { text-align: center; font-size: 0.85rem; color: var(--sub); padding: 0 0 2.5rem; }
   @media (max-width: 560px) {
     header h1 { font-size: 1.55rem; }
@@ -149,13 +151,11 @@
   <section id="reserve">
     <h2>ご予約・お問い合わせ</h2>
     <p class="lead">外来はすべて予約制です。</p>
-    <a class="tel" href="tel:05036454567">050-3645-4567</a>
-    <p>ご予約のほか、診療に関するお問い合わせもこの番号で受け付けています。</p>
-    <p><strong>新患のご相談：火・水・木曜日　10時〜16時</strong></p>
-    <p>診察中はお電話に出られません。必ず留守番電話に、患者さんのお名前と症状を残してください。あとで医師から折り返しお電話します。</p>
     <h3>初めて受診される方</h3>
-    <p>受診のお申し込みは、こちらのフォームからも受け付けています。</p>
+    <p>受診のお申し込みは、新患申し込みフォームからお願いします。</p>
     <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdmz9QwO_31q-cjtAJj_XPYg8YM929Tw8uFXZ7jiwegNCY-TA/viewform" target="_blank" rel="noopener">新患申し込みフォーム</a>
+    <h3>お電話の場合</h3>
+    <p>新患のご相談は、火・水・木曜日の10時〜16時に受け付けています（電話 <a href="tel:05036454567">050-3645-4567</a>）。診察中はお電話に出られません。留守番電話に、患者さんのお名前と症状を残してください。あとで医師から折り返しお電話します。</p>
     <p>ほかの医療機関にかかっている方は、紹介状（診療情報提供書）をお持ちください。年末年始やお盆などの休診日は、このページのお知らせでご案内します。</p>
   </section>
 
@@ -221,19 +221,22 @@
     <h2>アクセス</h2>
     <dl>
       <div><dt>住所</dt><dd>〒981-0917<br>宮城県仙台市青葉区葉山町8-1</dd></div>
-      <div><dt>電話</dt><dd><a href="tel:05036454567">050-3645-4567</a></dd></div>
       <div><dt>バス</dt><dd>仙台市営バス「長生園前」下車　徒歩2分</dd></div>
       <div><dt>電車</dt><dd>地下鉄南北線・JR仙山線「北仙台駅」から徒歩10分</dd></div>
       <div><dt>駐車場</dt><dd>あり（無料）</dd></div>
     </dl>
     <p class="small">泉区の「仙台脳とこころのクリニック」とは別の医療機関です。</p>
-    <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E8%91%89%E5%B1%B1%E7%94%BA8-1" target="_blank" rel="noopener">Googleマップで開く</a>
+    <h3>北仙台駅からの道順（徒歩約10分）</h3>
+    <div class="map">
+      <iframe title="北仙台駅から脳と心の石原クリニックまでの徒歩ルート" src="https://www.google.com/maps?saddr=%E5%8C%97%E4%BB%99%E5%8F%B0%E9%A7%85&amp;daddr=%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E8%91%89%E5%B1%B1%E7%94%BA8-1&amp;dirflg=w&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%8C%97%E4%BB%99%E5%8F%B0%E9%A7%85&amp;destination=%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E8%91%89%E5%B1%B1%E7%94%BA8-1&amp;travelmode=walking" target="_blank" rel="noopener">Googleマップで道順を開く</a>
   </section>
 
 </main>
 
 <footer>
-  <p>脳と心の石原クリニック　〒981-0917 宮城県仙台市青葉区葉山町8-1　TEL 050-3645-4567</p>
+  <p>脳と心の石原クリニック　〒981-0917 宮城県仙台市青葉区葉山町8-1</p>
 </footer>
 
 </body>
